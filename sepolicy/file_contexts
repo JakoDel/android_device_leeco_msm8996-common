@@ -1,1 +1,11 @@
 /system/bin/mbn_daemon                                          u:object_r:mbn_daemon_exec:s0
+
+# devices
+/dev/ttyHSL1                                                             u:object_r:consumer_ir_device:s0
+
+# Shell scripts
+/(vendor|system/vendor)/bin/init\.uei\.sh                                                      u:object_r:init_uei_exec:s0
+
+# sysfs
+
+/sys/remote/enable                                                       u:object_r:sysfs_ir_enable:s0
